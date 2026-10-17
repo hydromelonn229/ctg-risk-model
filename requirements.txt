@@ -1,0 +1,10 @@
+wfdb==4.1.2
+numpy==2.2.4
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+shap==0.47.0
+matplotlib==3.10.1
+seaborn==0.13.2
+pytest==8.3.5
+streamlit==1.44.0

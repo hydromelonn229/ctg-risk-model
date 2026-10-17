@@ -1,0 +1,19 @@
+feature,coefficient,absolute_coefficient,direction
+acceleration_duration_s,0.6652986951562295,0.6652986951562295,higher risk
+deceleration_mean_duration_s,0.4716842910066795,0.4716842910066795,higher risk
+fhr_std_bpm,0.40926482275373327,0.40926482275373327,higher risk
+n_decelerations,0.2904636723653189,0.2904636723653189,higher risk
+longest_gap_before_interpolation_s,-0.25091034997719375,0.25091034997719375,lower risk
+deceleration_mean_depth_bpm,-0.22056709423162174,0.22056709423162174,lower risk
+pct_signal_loss_before_interpolation,0.19296277889432617,0.19296277889432617,higher risk
+n_accelerations,-0.16075232042887252,0.16075232042887252,lower risk
+pct_signal_missing,0.1527109698445027,0.1527109698445027,higher risk
+pct_signal_loss_after_interpolation,0.1527109698445027,0.1527109698445027,higher risk
+interpolated_samples,0.13709245287661784,0.13709245287661784,higher risk
+long_term_variability_bpm,-0.13576858837389943,0.13576858837389943,lower risk
+n_contractions,0.1319090352905975,0.1319090352905975,higher risk
+contraction_rate_per_10min,0.1319090352905956,0.1319090352905956,higher risk
+n_late_decelerations,-0.09571398456305814,0.09571398456305814,lower risk
+baseline_fhr_bpm,0.0679174719268762,0.0679174719268762,higher risk
+longest_gap_after_interpolation_s,-0.030328740891604485,0.030328740891604485,lower risk
+short_term_variability_bpm,-0.01838377852986407,0.01838377852986407,lower risk

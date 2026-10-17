@@ -1,0 +1,12 @@
+,count
+metadata_rows,552
+duplicate_record_ids,0
+duplicate_metadata_rows,0
+dat_files,552
+hea_files,552
+dat_without_header,0
+header_without_dat,0
+missing_metadata_cells,38
+missing_pH,0
+invalid_pH,0
+non_4Hz_records,0

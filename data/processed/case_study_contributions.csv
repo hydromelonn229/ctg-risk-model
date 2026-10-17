@@ -1,0 +1,16 @@
+case_type,record,rank,feature,contribution,feature_value
+true_positive,1198,1,deceleration_mean_duration_s,3.795723493388831,180.5
+true_positive,1198,2,fhr_std_bpm,1.5181229983197162,41.35798185651863
+true_positive,1198,3,acceleration_duration_s,-0.6186472846026939,0.0
+true_positive,1198,4,n_decelerations,-0.29300130387376283,3.0
+true_positive,1198,5,deceleration_mean_depth_bpm,-0.2617042095954815,66.33333333333333
+false_positive,1035,1,deceleration_mean_duration_s,2.145003982769411,117.33333333333331
+false_positive,1035,2,acceleration_duration_s,1.753995979252414,443.25
+false_positive,1035,3,fhr_std_bpm,1.176452198813483,36.542262049962936
+false_positive,1035,4,n_accelerations,-0.3804105616490733,11.0
+false_positive,1035,5,n_decelerations,-0.29300130387376283,3.0
+false_negative,1488,1,acceleration_duration_s,1.0567894702459213,313.0
+false_negative,1488,2,deceleration_mean_duration_s,-0.4018515154751924,19.875
+false_negative,1488,3,n_accelerations,-0.3301282093123862,10.0
+false_negative,1488,4,deceleration_mean_depth_bpm,0.27568729817720394,28.5
+false_negative,1488,5,n_contractions,-0.12295300186960692,7.0

@@ -1,0 +1,16 @@
+feature,top_k_count,median_rank,top_k_fraction
+acceleration_duration_s,25,1.0,1.0
+deceleration_mean_duration_s,23,3.0,0.92
+fhr_std_bpm,21,2.0,0.84
+n_decelerations,14,3.5,0.56
+deceleration_mean_depth_bpm,10,4.5,0.4
+longest_gap_before_interpolation_s,7,4.0,0.28
+long_term_variability_bpm,6,4.0,0.24
+n_accelerations,5,4.0,0.2
+n_late_decelerations,4,4.0,0.16
+interpolated_samples,3,5.0,0.12
+longest_gap_after_interpolation_s,2,4.5,0.08
+pct_signal_loss_before_interpolation,2,4.5,0.08
+contraction_rate_per_10min,1,5.0,0.04
+pct_signal_loss_after_interpolation,1,5.0,0.04
+pct_signal_missing,1,5.0,0.04
