@@ -57,6 +57,8 @@ documents; the `.py` files are the reproducible runners.
 
 The Streamlit deployment uses the smaller runtime-only `requirements.txt`;
 development and notebook tooling is kept in `requirements-dev.txt`.
+The deployment runtime is pinned to Python 3.13 using `runtime.txt` and
+`.python-version`.
 
 ## Explore the demo
 
