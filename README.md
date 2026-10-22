@@ -46,7 +46,7 @@ directory layout produced by the PhysioNet ZIP archive.
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python run_pipeline.py
 pytest -q
 ```
@@ -54,6 +54,9 @@ pytest -q
 The pipeline writes processed tables to `data/processed/` and figures to
 `reports/figures/`. The notebooks in `notebooks/` are companion exploration
 documents; the `.py` files are the reproducible runners.
+
+The Streamlit deployment uses the smaller runtime-only `requirements.txt`;
+development and notebook tooling is kept in `requirements-dev.txt`.
 
 ## Explore the demo
 
