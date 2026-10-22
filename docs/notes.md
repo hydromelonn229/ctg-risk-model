@@ -93,6 +93,15 @@ Notes captured during Phase 0 reading and Phase 1 EDA.
 - The direction of some associations is not automatically clinical: acceleration duration and FHR spread were positively associated with the low-pH label in this small retrospective sample, while acceleration count was negative. These findings require clinical review and external validation rather than mechanistic interpretation.
 - Three case-study traces are selected from out-of-fold predictions. An exploratory 0.20 calibrated-risk operating point is used only to make TP/FP/FN examples readable; it is not a recommended clinical threshold.
 
+## Phase 6 and 7 write-up and demo (2026-10-18)
+
+- Added `README.md` with the problem statement, data source and citation, method, results, figures, limitations, reproducibility instructions, and next steps for real hospital data.
+- Added `run_pipeline.py` as the one-command rebuild entry point and pinned notebook execution dependencies in `requirements.txt`.
+- Added `app.py`, a Streamlit demonstration showing a selected final-window FHR/UC trace, repeated out-of-fold calibrated research score, and five largest plain-language logistic contributions.
+- Added `docs/rehearsal.md` with 30-second and two-minute explanations plus concise answers to likely interview questions.
+- The Streamlit app passed a local health-check smoke test. The full pipeline rebuilt EDA, preprocessing, and feature outputs; the environment then reported an external Windows file lock on the pre-existing `data/processed/model_results.csv` during model-output replacement. The modelling and explainability stages remain independently validated by the full test suite and prior artifact checks.
+- The demo UI was redesigned using the selected Frontend Design and Web Interface Guidelines skills: signal-first hierarchy, deep slate clinical workspace, sea-glass teal signal accent, amber caution state, visible focus treatment, cached data loading, and explicit separation between observed outcome and model estimate.
+
 ---
 
 ## CTG basics (from reading)

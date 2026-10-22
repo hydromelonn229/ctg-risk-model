@@ -1,2 +1,11 @@
 data/raw/
 files/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+data/ctu-uhb-ctgdb.zip
+.vscode/
+.idea/
+*.log
