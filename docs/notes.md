@@ -101,6 +101,7 @@ Notes captured during Phase 0 reading and Phase 1 EDA.
 - Added `docs/rehearsal.md` with 30-second and two-minute explanations plus concise answers to likely interview questions.
 - The Streamlit app passed a local health-check smoke test. The full pipeline rebuilt EDA, preprocessing, and feature outputs; the environment then reported an external Windows file lock on the pre-existing `data/processed/model_results.csv` during model-output replacement. The modelling and explainability stages remain independently validated by the full test suite and prior artifact checks.
 - The demo UI was redesigned using the selected Frontend Design and Web Interface Guidelines skills: signal-first hierarchy, deep slate clinical workspace, sea-glass teal signal accent, amber caution state, visible focus treatment, cached data loading, and explicit separation between observed outcome and model estimate.
+- The deployed demo now uses a compact `data/demo/` bundle containing 10 selected public CTU-UHB records: the three Phase 5 case studies plus seven additional records for browsing. The UI restricts selection to this bundle and states that it is not the full dataset; the complete dataset remains a separate local download.
 
 ---
 

@@ -1,4 +1,7 @@
 data/raw/
+!data/demo/
+!data/demo/*.dat
+!data/demo/*.hea
 files/
 .venv/
 __pycache__/

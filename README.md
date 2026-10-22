@@ -70,8 +70,9 @@ Choose a recording to inspect its final-window FHR/UC trace, repeated
 out-of-fold calibrated risk estimate, and five largest standardized logistic
 contributions. Use the sidebar's “Highest model score” view to find
 high-scoring records, “Case studies” to revisit the Phase 5 examples, or
-record-ID search to jump directly to a recording. The score is an explanatory
-research output, not a clinical probability.
+record-ID search to jump directly to a recording. The deployed demo contains
+10 selected records, not the full dataset; see `data/demo/README.md`. The
+score is an explanatory research output, not a clinical probability.
 
 ## Dashboard walkthrough screenshots
 

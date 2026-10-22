@@ -16,7 +16,7 @@ from src.explainability import local_contributions
 from src.preprocessing import prepare_recording
 
 PROCESSED = ROOT / "data" / "processed"
-RAW_DIR = resolve_data_dir(ROOT / "data" / "raw")
+RAW_DIR = resolve_data_dir(ROOT / "data" / "demo")
 PRIMARY_THRESHOLD = 7.15
 CASE_DECISION_THRESHOLD = 0.20
 
@@ -113,6 +113,14 @@ prediction_summary = (
     )
 )
 records = usable.merge(prediction_summary, on="record", validate="one_to_one")
+available_demo_records = set(
+    path.stem for path in RAW_DIR.glob("*.hea")
+)
+records = records.loc[records["record"].isin(available_demo_records)].copy()
+if records.empty:
+    raise RuntimeError(
+        "No demo recordings are available. Expected WFDB .hea/.dat files in data/demo."
+    )
 records["research_class"] = np.select(
     [
         (records["y_true"] == 1) & (records["calibrated_score"] >= CASE_DECISION_THRESHOLD),
@@ -190,6 +198,7 @@ with st.sidebar:
     st.divider()
     st.caption("Primary outcome")
     st.markdown("Umbilical artery cord pH **< 7.15**")
+    st.warning("Demo contains 10 selected records, not the full dataset.")
     st.caption("The score is a retrospective research estimate, not a diagnosis.")
 
 case = records.loc[records["record"] == selected_record].iloc[0]
@@ -210,6 +219,7 @@ st.markdown(
 )
 with st.expander("How to find an interesting recording"):
     st.write(
+        "This deployed demo contains 10 selected records, not the full dataset. "
         "Start with **Highest model score** to review the records the model ranks "
         "highest. Use **Case studies** for the true-positive, false-positive, and "
         "false-negative examples from Phase 5. **Confirmed low pH (research)** "
