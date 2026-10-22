@@ -70,6 +70,38 @@ high-scoring records, “Case studies” to revisit the Phase 5 examples, or
 record-ID search to jump directly to a recording. The score is an explanatory
 research output, not a clinical probability.
 
+## Dashboard walkthrough screenshots
+
+These three records are reserved as representative demo cases:
+
+| Record | Research case | Cord pH | Calibrated score | Why show it |
+|---|---|---:|---:|---|
+| 1198 | True positive | 7.03 | 45.3% | High model score and low-pH outcome |
+| 1035 | False positive | 7.28 | 44.3% | High model score without the low-pH outcome |
+| 1488 | False negative | 7.14 | 19.7% | Low-pH outcome just below the exploratory 20% view threshold |
+
+Each record has three screenshot slots: the summary cards, the signal review
+graph, and the model-reasoning table. Replace the placeholder images below
+with screenshots captured from the Streamlit demo.
+
+### Record 1198 — true positive
+
+![Record 1198 summary cards](reports/dashboard/record-1198-cards.png)
+![Record 1198 signal review](reports/dashboard/record-1198-signal.png)
+![Record 1198 model reasoning table](reports/dashboard/record-1198-table.png)
+
+### Record 1035 — false positive
+
+![Record 1035 summary cards](reports/dashboard/record-1035-cards.png)
+![Record 1035 signal review](reports/dashboard/record-1035-signal.png)
+![Record 1035 model reasoning table](reports/dashboard/record-1035-table.png)
+
+### Record 1488 — false negative
+
+![Record 1488 summary cards](reports/dashboard/record-1488-cards.png)
+![Record 1488 signal review](reports/dashboard/record-1488-signal.png)
+![Record 1488 model reasoning table](reports/dashboard/record-1488-table.png)
+
 ## Method
 
 1. **Quality checks:** verify IDs, metadata, pH, sampling rate, and WFDB file
